@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29793AE72E55FA0D006E1B12 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29793AE62E55FA0D006E1B12 /* Movie.swift */; };
 		299FCEFA2E54E02A0005FB1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 299FCEF62E54E02A0005FB1C /* Assets.xcassets */; };
 		299FCEFB2E54E02A0005FB1C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299FCEF72E54E02A0005FB1C /* ContentView.swift */; };
 		299FCEFC2E54E02A0005FB1C /* WatchlistAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299FCEF82E54E02A0005FB1C /* WatchlistAppApp.swift */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		29793AE62E55FA0D006E1B12 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		299FCEE82E54DFD60005FB1C /* WatchlistApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchlistApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		299FCEF62E54E02A0005FB1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		299FCEF72E54E02A0005FB1C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 		299FCEFE2E54E0480005FB1C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				29793AE62E55FA0D006E1B12 /* Movie.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			files = (
 				299FCF022E54E0760005FB1C /* Genre.swift in Sources */,
 				299FCEFB2E54E02A0005FB1C /* ContentView.swift in Sources */,
+				29793AE72E55FA0D006E1B12 /* Movie.swift in Sources */,
 				299FCEFC2E54E02A0005FB1C /* WatchlistAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
