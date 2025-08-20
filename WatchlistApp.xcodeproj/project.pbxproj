@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		29793AE72E55FA0D006E1B12 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29793AE62E55FA0D006E1B12 /* Movie.swift */; };
+		29793AE92E55FC96006E1B12 /* EmptyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29793AE82E55FC96006E1B12 /* EmptyListView.swift */; };
 		299FCEFA2E54E02A0005FB1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 299FCEF62E54E02A0005FB1C /* Assets.xcassets */; };
 		299FCEFB2E54E02A0005FB1C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299FCEF72E54E02A0005FB1C /* ContentView.swift */; };
 		299FCEFC2E54E02A0005FB1C /* WatchlistAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299FCEF82E54E02A0005FB1C /* WatchlistAppApp.swift */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		29793AE62E55FA0D006E1B12 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		29793AE82E55FC96006E1B12 /* EmptyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EmptyListView.swift; path = WatchlistApp/Utility/EmptyListView.swift; sourceTree = SOURCE_ROOT; };
 		299FCEE82E54DFD60005FB1C /* WatchlistApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchlistApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		299FCEF62E54E02A0005FB1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		299FCEF72E54E02A0005FB1C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 		299FCEFD2E54E0330005FB1C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				29793AE82E55FC96006E1B12 /* EmptyListView.swift */,
 				299FCEF72E54E02A0005FB1C /* ContentView.swift */,
 			);
 			path = View;
@@ -170,6 +173,7 @@
 				299FCEFB2E54E02A0005FB1C /* ContentView.swift in Sources */,
 				29793AE72E55FA0D006E1B12 /* Movie.swift in Sources */,
 				299FCEFC2E54E02A0005FB1C /* WatchlistAppApp.swift in Sources */,
+				29793AE92E55FC96006E1B12 /* EmptyListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
