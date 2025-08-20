@@ -24,10 +24,17 @@ struct EmptyListView: View {
               .foregroundStyle(Color(UIColor.secondarySystemBackground))
               .padding(.top, -6)
           }
+          .padding(.bottom, 90)
         } description: {
           GroupBox {
-            PageTabView(icon: "1.circle", description: "Add some movies to the watchlist")
-            PageTabView(icon: "2.circle", description: "Chose a random film to watch")
+            TabView {
+              PageTabView(icon: "1.circle", description: "Add some movies to the watchlist")
+                .padding(36)
+              PageTabView(icon: "2.circle", description: "Choose a random film to watch")
+                .padding(36)
+            }
+            .tabViewStyle(.page)
+            .frame(minWidth: 0, maxWidth: 560, minHeight: 120, maxHeight: 180)
           }
 
         }

@@ -57,12 +57,12 @@
 		299FCEF92E54E02A0005FB1C /* WatchlistApp */ = {
 			isa = PBXGroup;
 			children = (
+				299FCEF82E54E02A0005FB1C /* WatchlistAppApp.swift */,
 				299FCF002E54E0500005FB1C /* Utility */,
 				299FCEFF2E54E04B0005FB1C /* Component */,
 				299FCEFE2E54E0480005FB1C /* Model */,
 				299FCEF62E54E02A0005FB1C /* Assets.xcassets */,
 				299FCEFD2E54E0330005FB1C /* View */,
-				299FCEF82E54E02A0005FB1C /* WatchlistAppApp.swift */,
 			);
 			path = WatchlistApp;
 			sourceTree = "<group>";
