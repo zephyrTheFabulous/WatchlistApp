@@ -12,14 +12,15 @@ struct NewMovieFormView: View {
   @State private var selectedGenre: Genre = .scifi
   @Environment(\.modelContext) var modelContext
   @Environment(\.dismiss) var dismiss
-
+  
+    // create object from values from TextField & Picker
   private func addNewMovie() {
     let newMovie = Movie(title: title, genre: selectedGenre)
     modelContext.insert(newMovie)
     title = ""
     selectedGenre = .scifi
   }
-
+  
   var body: some View {
     Form {
       List {
@@ -50,10 +51,10 @@ struct NewMovieFormView: View {
             .font(.title2)
             .fontWeight(.medium)
             .frame(maxWidth: .infinity)
-            .buttonStyle(.borderedProminent)
-            .controlSize(.extraLarge)
-            .buttonBorderShape(.roundedRectangle)
         }
+        .buttonStyle(.borderedProminent)
+        .controlSize(.extraLarge)
+        .buttonBorderShape(.roundedRectangle)
           //MARK: - CANCEL BUTTON
         Button {
           dismiss()

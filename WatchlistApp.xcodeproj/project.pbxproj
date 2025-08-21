@@ -15,6 +15,7 @@
 		299FCEFB2E54E02A0005FB1C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299FCEF72E54E02A0005FB1C /* ContentView.swift */; };
 		299FCEFC2E54E02A0005FB1C /* WatchlistAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299FCEF82E54E02A0005FB1C /* WatchlistAppApp.swift */; };
 		299FCF022E54E0760005FB1C /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299FCF012E54E0760005FB1C /* Genre.swift */; };
+		29D333C02E575473009A8F4A /* ButtonImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D333BF2E575473009A8F4A /* ButtonImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		299FCEF72E54E02A0005FB1C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		299FCEF82E54E02A0005FB1C /* WatchlistAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistAppApp.swift; sourceTree = "<group>"; };
 		299FCF012E54E0760005FB1C /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		29D333BF2E575473009A8F4A /* ButtonImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				29793AEA2E55FEDF006E1B12 /* PageTabView.swift */,
+				29D333BF2E575473009A8F4A /* ButtonImageView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			files = (
 				299FCF022E54E0760005FB1C /* Genre.swift in Sources */,
 				299FCEFB2E54E02A0005FB1C /* ContentView.swift in Sources */,
+				29D333C02E575473009A8F4A /* ButtonImageView.swift in Sources */,
 				29793AE72E55FA0D006E1B12 /* Movie.swift in Sources */,
 				297E1B502E571D56004F5BA5 /* NewMovieFormView.swift in Sources */,
 				299FCEFC2E54E02A0005FB1C /* WatchlistAppApp.swift in Sources */,

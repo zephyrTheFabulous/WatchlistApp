@@ -11,6 +11,7 @@ import SwiftData
 struct ContentView: View {
   @Environment(\.modelContext) private var modelContext
   @Query private var movies: [Movie]
+  @State private var isSheetPresented = false
 
     var body: some View {
       List {
@@ -20,6 +21,16 @@ struct ContentView: View {
         if movies.isEmpty {
           EmptyListView()
         }
+      }
+      .safeAreaInset(edge: .bottom, alignment: .center) {
+        Button {
+          isSheetPresented.toggle()
+        } label: {
+          ButtonImageView(symbolName: "plus.circle.fill")
+        }
+      }
+      .sheet(isPresented: $isSheetPresented) {
+        NewMovieFormView()
       }
     }
 }
