@@ -15,7 +15,22 @@ struct ContentView: View {
 
     var body: some View {
       List {
-
+        ForEach(movies) { movie in
+          HStack {
+            Text(movie.title)
+            Spacer()
+            Text(movie.genre.name)
+          } //: LIST ROW
+          .swipeActions {
+            Button (role: .destructive) {
+              withAnimation {
+                modelContext.delete(movie)
+              }
+            } label: {
+              Label("Delete", systemImage: "trash")
+            }
+          }
+        }
       } //: LIST
       .overlay {
         if movies.isEmpty {
@@ -33,6 +48,11 @@ struct ContentView: View {
         NewMovieFormView()
       }
     }
+}
+
+#Preview("Sample Data") {
+  ContentView()
+    .modelContainer(Movie.preview)
 }
 
 #Preview("Empty") {
