@@ -12,6 +12,13 @@ struct ContentView: View {
   @Environment(\.modelContext) private var modelContext
   @Query(sort: \Movie.title) private var movies: [Movie] // alphabet order
   @State private var isSheetPresented = false
+  @State private var randomMovie = "" // to hold a random movie name
+  @State private var isShowingAlert = false
+  
+    // function to show random movie from the list if there are more than 1 movie
+  private func randomMovieGenerator() {
+    randomMovie = movies.randomElement()!.title
+  }
   
   var body: some View {
     List {
@@ -63,11 +70,31 @@ struct ContentView: View {
       }
     }
     .safeAreaInset(edge: .bottom, alignment: .center) {
-      Button {
-        isSheetPresented.toggle()
-      } label: {
-        ButtonImageView(symbolName: "plus.circle.fill")
+      HStack {
+        if movies.count >= 2 {
+            // RANDOMIZE BUTTON
+          Button {
+            randomMovieGenerator()
+            isShowingAlert = true
+          } label: {
+            ButtonImageView(symbolName: "arrow.trianglehead.2.clockwise.rotate.90.circle.fill")
+          }
+          .alert(randomMovie, isPresented: $isShowingAlert) {
+            Button("OK", role: .cancel) {
+              
+            }
+            
+          }
+          Spacer()
+        }
+          //MARK: - Add new movie
+        Button {
+          isSheetPresented.toggle()
+        } label: {
+          ButtonImageView(symbolName: "plus.circle.fill")
+        }
       }
+      .padding(.horizontal, 16)
     }
     .sheet(isPresented: $isSheetPresented) {
       NewMovieFormView()
@@ -77,10 +104,10 @@ struct ContentView: View {
 
 #Preview("Sample Data") {
   ContentView()
-  .modelContainer(Movie.preview)
+    .modelContainer(Movie.preview)
 }
 
 #Preview("Empty") {
   ContentView()
-  .modelContainer(for: Movie.self, inMemory: true)
+    .modelContainer(for: Movie.self, inMemory: true)
 }
