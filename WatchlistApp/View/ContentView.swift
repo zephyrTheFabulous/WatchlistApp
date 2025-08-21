@@ -14,12 +14,12 @@ struct ContentView: View {
   @State private var isSheetPresented = false
   @State private var randomMovie = "" // to hold a random movie name
   @State private var isShowingAlert = false
-  
+
     // function to show random movie from the list if there are more than 1 movie
   private func randomMovieGenerator() {
     randomMovie = movies.randomElement()!.title
   }
-  
+
   var body: some View {
     List {
       if !movies.isEmpty {
@@ -80,11 +80,11 @@ struct ContentView: View {
             ButtonImageView(symbolName: "arrow.trianglehead.2.clockwise.rotate.90.circle.fill")
           }
           .alert(randomMovie, isPresented: $isShowingAlert) {
-            Button("OK", role: .cancel) {
-              
-            }
-            
+            Button("OK", role: .cancel) {}
           }
+          .accessibilityLabel("Random Movie")
+          .sensoryFeedback(.success, trigger: isShowingAlert)
+
           Spacer()
         }
           //MARK: - Add new movie
@@ -93,6 +93,8 @@ struct ContentView: View {
         } label: {
           ButtonImageView(symbolName: "plus.circle.fill")
         }
+        .accessibilityLabel("Add New Movie")
+        .sensoryFeedback(.success, trigger: isSheetPresented)
       }
       .padding(.horizontal, 16)
     }
