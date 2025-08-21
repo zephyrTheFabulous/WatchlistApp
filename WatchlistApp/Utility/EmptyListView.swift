@@ -11,10 +11,10 @@ struct EmptyListView: View {
     var body: some View {
         ContentUnavailableView {
           Circle()
-          .fill(.blue.gradient)
-          .stroke(.blue.gradient.opacity(0.15), lineWidth: 30)
-          .stroke(.blue.gradient.opacity(0.15), lineWidth: 60)
-          .stroke(.blue.gradient.opacity(0.15), lineWidth: 90)
+          .fill(.purple.gradient)
+          .stroke(.purple.gradient.opacity(0.15), lineWidth: 30)
+          .stroke(.purple.gradient.opacity(0.15), lineWidth: 60)
+          .stroke(.pink.gradient.opacity(0.15), lineWidth: 90)
           .frame(width: 180)
           .overlay {
             Image(systemName: "movieclapper")
